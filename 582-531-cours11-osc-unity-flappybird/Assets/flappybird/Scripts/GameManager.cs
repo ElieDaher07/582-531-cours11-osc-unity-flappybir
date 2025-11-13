@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         if (etatEnMemoire != nouveauEtat)
         { // Le code compare le nouvel etat avec l'etat en mémoire
             etatEnMemoire = nouveauEtat; // Le code met à jour l'état mémorisé
-            if (nouveauEtat == 0)
+            if (nouveauEtat == 0 && !isPlaying)
             {
                 Play();
                 // METTRE ici le code pour lorsque le bouton est appuyé
